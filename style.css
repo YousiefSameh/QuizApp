@@ -13,6 +13,7 @@ body {
   padding: 15px;
 }
 
+
 .quiz-app .quiz-info {
   display: flex;
   background-color: #ffffff;
@@ -89,6 +90,7 @@ body {
   background-color: white;
   display: flex;
   padding: 20px;
+  align-items: center;
 }
 
 .quiz-app .bullets .spans {
@@ -124,8 +126,21 @@ body {
   color: #0075ff;
 }
 
-.quiz-app .results {
+.quiz-app .results.active {
   padding: 20px;
   background-color: white;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+  .quiz-app {
+    width: 100%;
+  }
+  .quiz-app .quiz-area h2 {
+    font-size: 18px;
+  }
+  .quiz-app .bullets .spans span {
+    width: 15px;
+    height: 15px;
+  }
 }

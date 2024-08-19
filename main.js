@@ -168,6 +168,7 @@ function showResults(count) {
       theResults = `<span class="bad">Bad</span>, ${rightAnswers} From ${count}`;
     }
     theResultsContainer.innerHTML = theResults;
+    theResultsContainer.className = "results active";
   }
 }
 
